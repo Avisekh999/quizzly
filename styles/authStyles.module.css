@@ -1,0 +1,50 @@
+.heading {
+  font-size: 32px;
+  font-family: 'Caros Soft Medium';
+  letter-spacing: 1px;
+}
+.heading span {
+  display: block;
+  font-size: 26px;
+  color: var(--color-primary);
+}
+
+.form {
+  margin: 40px 0 15px;
+}
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Caros Soft Medium';
+}
+.formGroup {
+  margin-bottom: 20px;
+}
+ 
+.normal {
+  border: 1px solid rgb(226, 235, 241);
+  border-radius: 10px;
+  background-color: var(--color-light-2);
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 16px;
+} 
+.normal::placeholder {
+  font-family: 'Caros Soft Light';
+  color: var(--color-light-3);
+}
+.error{
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: var(--color-light-2);
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 16px;
+  color: red;
+}
+
+.error::placeholder {
+  font-family: 'Caros Soft Light';
+  color: red;
+}
+

@@ -1,0 +1,241 @@
+:root {
+  /* == Colors == */
+  --color-primary: #0a58ed;
+  --color-light-1: #f0f0f0;
+  --color-light-2: #f0f5fe;
+  --color-light-3: #696d7e;
+  --color-dark: #0f172a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Caros Soft Regular';
+  color: var(--color-dark);
+}
+
+#notification-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notification {
+  padding: 50px;
+  border-radius: 8px;
+  width: 50%;
+  font-size: 22px;
+  color: #0a58ed;
+  letter-spacing: 1.1px;
+  background-color: #0a59ed55;
+}
+
+#app {
+  display: none;
+}
+img {
+  width: 100%;
+}
+
+/* == Media queries to handle what content to show on small and large screens == */
+@media (max-width: 480px) {
+  /* Hide notification on small screen */
+  #notification-wrapper {
+    display: none;
+  }
+
+  /* Show app on small screen */
+  #app {
+    display: block;
+  }
+
+  /* == Utilities == */
+  .container {
+    width: 90%;
+    margin: auto;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .container::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .displayBlock {
+    width: 100%;
+  }
+
+  .btn {
+    border: none;
+    border-radius: 10px;
+    color: var(--color-dark);
+    background-color: var(--color-light-1);
+    font-family: 'Caros Soft Bold';
+  }
+  .btn-large {
+    padding: 20px 15px;
+    font-size: 18px;
+  }
+  .btn-small {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+    box-shadow: 5px 5px 25px #0a59edb9;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: var(--color-light-2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .paddingVertical-10 {
+    padding: 10px 0;
+  }
+  .paddingVertical-20 {
+    padding: 20px 0;
+  }
+
+  .marginTop-10 {
+    margin-top: 10px;
+  }
+  .marginLeft-10 {
+    margin-left: 10px;
+  }
+
+  .textLight {
+    color: var(--color-light-3);
+    font-family: 'Caros Soft Regular';
+  }
+
+  .active {
+    color: var(--color-primary);
+  }
+
+  .flex {
+    display: flex;
+  }
+  .align-center {
+    align-items: center;
+  }
+
+  /* == Animation == */
+  .animateComponent {
+    transition: all 0.3s linear;
+  }
+  .initial {
+    opacity: 0;
+    /* transform: translateX(-500px); */
+  }
+  .slideInLeft {
+    opacity: 1;
+    /* transform: translateX(0); */
+  }
+  .slideOutRight {
+    opacity: 0;
+    /* transform: translateX(500px); */
+  }
+
+  .slideInBottom {
+    opacity: 1;
+    transform: translateY(-500px);
+  }
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+  font-weight: bold;
+  color: #0a58ed;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

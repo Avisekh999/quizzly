@@ -1,0 +1,18 @@
+@media only screen  and (max-width: 800px) {
+	
+    .brainadd{
+      float: right;
+      margin-left: -14px;
+      margin-top: 19px;
+    }
+    }
+    
+    @media only screen and (min-width: 360px) and (max-width: 390px) {
+      
+      .brainadd{
+        float: right;
+        margin-left: -14px;
+        margin-top: -21px;
+      }
+      }
+    

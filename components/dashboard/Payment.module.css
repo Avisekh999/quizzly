@@ -1,0 +1,63 @@
+.paymentCard {
+  margin: 80px 0 80px 0;
+  /* border: 1px solid #f0f0f0; */
+  border-radius: 5px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+/* == Card Header == */
+.cardHeader {
+  padding: 40px 0;
+  border-radius: 5px 5px 0 0;
+  background-color: #0a59ed0c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardHeader > * {
+  margin-bottom: 25px;
+}
+.cardHeaderTitle {
+  font-size: 25px;
+}
+.pricing {
+  display: flex;
+  flex-direction: column;
+}
+.pricingText {
+  font-size: 40px;
+  font-weight: bold;
+}
+.pricingSubText {
+  text-align: center;
+}
+.subscribeButton {
+  border: none;
+  padding: 12px 48px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #10182f;
+  background-color: var(--color-primary);
+  box-shadow: 5px 5px 25px #0a59edb9;
+}
+
+/* == Card Content == */
+.cardContent {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+}
+.cardText {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.cardText span {
+  margin-left: 5px;
+}

@@ -1,0 +1,32 @@
+.sliderWrapper {
+  margin-bottom: 40px;
+}
+.sliderItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.sliderImage {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.sliderItem h2 {
+  text-transform: uppercase;
+  font-family: 'Caros Soft ExtraBold';
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.sliderItem p {
+  font-size: 22px;
+  font-family: 'Caros Soft Medium';
+}
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigationButtons > * {
+  flex: 1;
+}

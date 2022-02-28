@@ -1,0 +1,111 @@
+.navigationHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.navigationHeader span {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Caros Soft ExtraBold';
+}
+
+.questionHeader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.questionTracker {
+  color: #0a58ed;
+  font-family: 'Caros Soft Bold';
+  margin: 6px 0;
+  width: 50%;
+}
+.question {
+  font-family: 'Caros Soft ExtraBold';
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.leftArrowIcon {
+  margin-top: 10px;
+}
+
+.dot {
+  height: 22px;
+  width: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-bottom: -6px;
+}
+
+.dotselected {
+  height: 25px;
+  width: 25px;
+  background-color: #0a58ed;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid white;
+  margin-left: 20px;
+  margin-bottom: -6px;
+}
+
+.smalldot {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid white;
+  margin-left: 4px;
+  margin-bottom: -4px;
+}
+
+.optionBox,
+.optionBoxselected {
+  height: 70px;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+}
+
+.optionBoxselected {
+  border: none;
+  background-color: #0a59edcc;
+  box-shadow: rgb(0 0 0 / 17%) 0px -23px 25px 0px inset,
+    rgb(0 0 0 / 15%) 0px -36px 30px 0px inset,
+    rgb(0 0 0 / 10%) 0px -79px 40px 0px inset, rgb(0 0 0 / 6%) 0px 2px 1px,
+    rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px;
+
+  padding: 0;
+  display: flex;
+  align-items: center !important;
+}
+
+.option,
+.optionselected {
+  font-family: 'Caros Soft Bold';
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+.optionselected {
+  color: #fff;
+}
+
+.timer {
+  width: 100px;
+  font-family: 'Caros Soft Bold';
+  /* color: #0a58ed; */
+}
+
+.heading {
+  font-family: 'Caros Soft Bold';
+  font-size: 20px;
+}

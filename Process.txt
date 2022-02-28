@@ -1,0 +1,15 @@
+== Pages ==
+1. Authentication Page: i) Register Page  ii) Login Page
+Functionality:
+    1. Animate on register / login link click
+    2. Show error message under text-input
+
+
+2. Dashboard Page
+3. Quiz Play Page
+
+const variants = {
+    hidden: { opacity: 0, x: -200, y: 0 },
+    enter: { opacity: 1, x: 0, y: 0 },
+    exit: { opacity: 0, x: 0, y: -100 },
+  }
